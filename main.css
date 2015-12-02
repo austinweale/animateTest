@@ -1,0 +1,7 @@
+
+
+.fade.ng-enter {
+  transition:0.5s linear all;
+  opacity:1;
+}
+
