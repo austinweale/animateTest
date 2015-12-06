@@ -16,10 +16,13 @@
         <link href="main.css" type="text/css" rel="stylesheet" />
 
     </head>
-    <body>
+    <body ng-app="myApp" ng-controller="mainController">
+        <h1 class="page-header">Ng-Animate Test</h1>
 
-        <div ng-app="myApp" ng-controller="mainController">
-            <div ng-repeat="item in data" class="fade">
+        <button class="btn" ng-click="add()">create squares</button>
+
+        <div class="container">
+            <div ng-repeat="item in list track by $index" class="fade">
               {{ item }}
             </div>
         </div>
